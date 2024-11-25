@@ -34,7 +34,7 @@ export default function Navbar() {
         to={"/projects"}
         className={({isActive}) => {
             return isActive ? "active" : "";
-        }}
+        }} end
       >
         My Projects
       </NavLink>
