@@ -5,6 +5,8 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import Navbar from './components/NavBar';
+import ProjectLayout from "./pages/_templates/ProjectLayout";
+import TerminalAppProject from "./pages/TerminalAppProject";
 
 function App() {
   return (
@@ -17,6 +19,10 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/projects" element={<ProjectLayout />} >
+          <Route path="/projects/terminalApp" element={<TerminalAppProject />} />
+          <Route path="terminalApp" element={<TerminalAppProject />} />
+        </Route>
       </Routes>
       </BrowserRouter>
     </div>

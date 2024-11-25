@@ -12,7 +12,7 @@ export default function Navbar() {
           return isActive ? "active" : "";
         }}
       >
-        Home{" "}
+        Home{"  "}
       </NavLink>
       <NavLink
         to={"/about"}
@@ -20,7 +20,7 @@ export default function Navbar() {
             return isActive ? "active" : "";
         }}
       >
-        About Me{" "}
+        About Me{"  "}
       </NavLink>
       <NavLink
         to={"/contact"}
@@ -28,7 +28,23 @@ export default function Navbar() {
             return isActive ? "active" : "";
         }}
       >
-        Contact Me
+        Contact Me{"  "}
+      </NavLink>
+      <NavLink
+        to={"/projects"}
+        className={({isActive}) => {
+            return isActive ? "active" : "";
+        }}
+      >
+        My Projects
+      </NavLink>
+      <NavLink
+        to={"/projects/terminalApp"}
+        className={({isActive}) => {
+            return isActive ? "active" : "";
+        }}
+      >
+        My Terminal Application
       </NavLink>
     </nav>
   );
