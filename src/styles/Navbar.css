@@ -1,0 +1,5 @@
+nav {
+    a.active {
+        color: rgb(241, 11, 11);
+    }
+}
